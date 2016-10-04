@@ -17,7 +17,7 @@ def game():
     time.sleep(2)
     print("Your mission is to collect boxes on your path..")
     print("Answer all the questions and pick up 3 boxes to win!")
-    choice = input("Are you ready to begin?(Y/N)")
+    choice = input("Are you ready to begin? [Y/N]")
     time.sleep(2)
     if choice == 'Y':
         #start() is our main game method
