@@ -4,7 +4,7 @@ import random
 print("This is my Dice Roll game")
 print("--------------------------")
 uname = input("Enter your chosen User Name:")
-print("Welcome,"+uname.capitalize()+". Roll a 6 to win!")
+print("Welcome,"+uname.capitalize()+".\n Roll a 6 to win!")
 '''
 def start_game():
     game()
@@ -19,7 +19,7 @@ while game_on:
     
     if keyy == 'q':
         game_on = False
-        print("Thanks for playing!")
+        print(" ;} We hope you come back soon..")
     else:    
 
         roll = random.randint(1,6)

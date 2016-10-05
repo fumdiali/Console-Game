@@ -57,11 +57,38 @@ def start():
             if haul < 3:
                 #convert boxes count to string for output
                 print("Your Boxes: "+str(haul))
-                print("You require "+str(int(3 - haul))+" more boxes to win!")
+                print("You require "+str(int(3 - haul))+" more to win!")
             else:
                 print("You have "+str(boxes)+"!Winner!")
         else:
             print("Incorrect!") 
 
+    time.sleep(3)
+    print("----------------------------------------------------------")
+    print("Task Two Begins:")
+    time.sleep(2)
+    print("You're now walking down a dusty path,you hear the sound of a 'HISSSS'")
+    print("There's a snake slithering to your right..")
+    print("________:")
+    print("|         " )
+    print("| ")
+    print("|_______ ")
+    print("        |")
+    print("        |")
+    print("        |")
+    snake = input("Do you a) Stamp it under-foot b) Smash it with your box [Type a/b]")
+    if snake == 'a':
+        print("Good job!It's a rubber snake!")
+        boxes = boxes + 1
+        haul = boxes
+
+        if haul < 3:
+        #convert boxes count to string for output
+            print("Your Boxes: "+str(haul))
+            print("You require "+str(int(3 - haul))+" more to win!")
+        else:
+            print("You have "+str(boxes)+"!Winner!")
+    elif snake == 'b':
+        print("Now why would you destroy your box???")
 
 game()
